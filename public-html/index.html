@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Main Tote</title>
+  <link rel="stylesheet" href="project.css">
+  <link rel="stylesheet" href="settings.css">
+  <link rel="stylesheet" href="newvessel.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="settings.js"></script>
+  <script src="maintote.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <div>
+    <a href="weather tote/Weathertote.html"> <button class = "fas fa-cloud-showers-heavy" style="font-size:36px;color:rgb(10, 175, 204)"></i></button> </a> 
+  </div>
+
+  <div>
+    <a href="radar-view/radar.html"> <button class="fas fa-bullseye" style="font-size:36px;color:rgb(10, 175, 204)"></i></button> </a> 
+  </div>
+
+  
+
+  
+    
+    
+
+  <div id="settingsSidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    
+    <a>Max Distance(km)</a>
+    <input type="text" id = "maxDistance" value = "5000000">
+    <a>Show Hostility</a>
+    
+    <form id="hostile">
+      <label class="switch"> 
+        <input type="checkbox" checked>
+        <span style class="slider round">  </span>
+      </label>
+      
+      <p style="color:white" style="left: 4000px;" style="top: 20px;">
+        Hostile
+      <p>
+      </form>
+      <script>hostileCheckboxHandlers();</script>
+      
+      <form id="friendly">
+        <label class="switch"> 
+          <input type="checkbox" checked>
+          <span style class="slider round">  </span>
+        </label>
+        
+        <p style="color:white" style="left: 4000px;" style="top: 20px;">
+          Friendly
+        <p>
+        </form>
+        <script>friendlyCheckboxHandlers();</script>
+  
+      <form id="neutral">
+      <label class="switch"> 
+          <input type="checkbox" checked>
+          <span style class="slider round"> </span>
+        </label>
+        <p style="color:white" style="left: 4000px;" style="top: 20px;">
+          Neutral
+        <p>
+      </form>
+      <script>neutralCheckboxHandlers();</script>
+      
+      <a>Show Classification</a>
+      
+      <form id="air">
+      <label class="switch"> 
+        <input type="checkbox" checked>
+        <span class="slider round"></span>
+      </label><p style="color:white" style="left: 4000px;" style="top: 20px;">
+        Air
+      <p>
+      </form>
+      <script>airCheckboxHandlers();</script>
+  
+      <form id="land">
+      <label class="switch"> 
+        <input type="checkbox" checked>
+        <span class="slider round"></span>
+      </label><p style="color:white" style="left: 4000px;" style="top: 20px;">
+        Land
+      <p>
+      </form>
+      <script>landCheckboxHandlers();</script>
+  
+      <form id="subsurface">
+      <label class="switch"> 
+        <input type="checkbox" checked>
+        <span class="slider round"></span>
+      </label><p style="color:white" style="left: 4000px;" style="top: 20px;">
+        Subsurface
+      </form>
+      <script>subsurfaceCheckboxHandlers();</script>
+  
+      <form id="sea">
+      <label class="switch"> 
+        <input type="checkbox" checked>
+        <span class="slider round"></span>
+      </label><p style="color:white" style="left: 4000px;" style="top: 20px;">
+        Sea
+        <p>
+      <br><br>
+    </form>
+    <script>seaCheckboxHandlers();</script>
+  </div>
+</div>
+
+  <div id="NV1" class="modal">
+
+
+    <form class="modal-content animate" id="myForm">
+      <div class="imgcontainer">
+        <span onclick="document.getElementById('NV1').style.display='none'" class="close"
+          title="Close Modal">&times;</span>
+      </div>
+
+      <div class="container">
+        <label for="id"><b>Identifier</b></label>
+        <input type="text" placeholder="Enter Vehicle Id" name="identifier" id="identifier" required>
+
+        <label for="cls"><b>Classification</b></label>
+        <input type="text" placeholder="Enter Classification" name="classification" id="classification" required>
+
+        <label for="subcls"><b>SubClassification</b></label>
+        <input type="text" placeholder="Enter SubClassification" name="subclassification" id="subclassification"
+          required>
+
+        <label for="long"><b>Longitude</b></label>
+        <input type="number" placeholder="Enter Longitude" name="longitude" id="longitude" required>
+
+        <label for="lat"><b>Latitude</b></label>
+        <input type="number" placeholder="Enter Latitude" name="latitude" id="latitude" required>
+
+        <label for="Elav"><b>Elevation</b></label>
+        <input type="number" placeholder="Enter Elevation" name="elevation" id="elevation" required>
+
+        <label for="armd"><b>Armed</b></label>
+        <input type="text" placeholder="Enter Armed" name="armed" id="armed" required>
+
+        <label for="hstility"><b>Hostility</b></label>
+        <input type="text" placeholder="Enter Hostility" name="hostility" id="hostility" required>
+
+        <label for="bering"><b>Bearing</b></label>
+        <input type="text" placeholder="Enter Bearing" name="bearing" id=bearing required>
+
+        <label for="heding"><b>Heading</b></label>
+        <input type="text" placeholder="Enter Heading" name="heading" id=heading required>
+
+        <label for="spd"><b>Speed</b></label>
+        <input type="text" placeholder="Enter Speed" name="speed" id=speed required>
+
+        <input id="addBtn" class="button" value="Add">
+
+
+      </div>
+
+      <div class="container" style="background-color:#f1f1f1">
+        <button type="button" onclick="document.getElementById('NV1').style.display='none'"
+          class="cancelbtn">Cancel</button>
+
+      </div>
+    </form>
+  </div>
+
+  <div id="NV2" class="modal">
+
+
+    <form class="modal-content animate" method="DELETE">
+      <div class="imgcontainer">
+        <span onclick="document.getElementById('NV2').style.display='none'" class="close"
+          title="Close Modal">&times;</span>
+      </div>
+
+      <div class="container">
+        <label for="id"><b>ID</b></label>
+        <input type="number" placeholder="Enter ID" name="id" id="ID4"required>
+
+        <button id="DELBtn" class="button" value="DELETE">DELETE
+
+      </div>
+
+      <div class="container" style="background-color:#f1f1f1">
+        <button type="button" onclick="document.getElementById('NV2').style.display='none'"
+          class="cancelbtn">Cancel</button>
+
+      </div>
+    </form>
+  </div>
+  <div id="NV3" class="modal">
+
+
+    <form class="modal-content animate" method="PUT">
+      <div class="imgcontainer">
+        <span onclick="document.getElementById('NV3').style.display='none'" class="close"
+          title="Close Modal">&times;</span>
+      </div>
+
+      <div class="container">
+        <label for="id_"><b>Id</b></label>
+        <input type="number" placeholder="Enter Id" name="id" id="ID2" required>
+        
+        <label for="identi"><b>Identifier</b></label>
+        <input type="number" placeholder="Enter Identifier" name="identifier" id="identifier2">
+
+        <label for="cls"><b>Classification</b></label>
+        <input type="text" placeholder="Enter Classification" name="classification" id="classification2">
+
+        <label for="subcls"><b>SubClassification</b></label>
+        <input type="text" placeholder="Enter SubClassification" name="subclassification" id="subclassification2">
+
+        <label for="hstility"><b>Hostility</b></label>
+        <input type="text" placeholder="Enter Hostility" name="hostility" id="hostility2">
+
+        <button id="editBtn" class="button" value="Edit">Edit
+
+
+      </div>
+
+      <div class="container" style="background-color:#f1f1f1">
+        <button type="button" onclick="document.getElementById('NV3').style.display='none'"
+          class="cancelbtn">Cancel</button>
+
+      </div>
+    </form>
+  </div>
+  <h1>
+    <button class="openbtn" onclick="openNav()">⚙️</button>
+    <button onclick="document.getElementById('NV1').style.display='block'" style="width:auto;">New Vessel</button>
+    <button onclick="document.getElementById('NV2').style.display='block'" style="width:auto;">Delete Vessel</button>
+    <button onclick="document.getElementById('NV3').style.display='block'" style="width:auto;">Edit Vessel</button>
+    
+    <table style="width:100%" id="main_table">
+      <thead>
+        <tr>
+
+          <th id="F" class="col-12">Function</th>
+          <th id="VI" class="col-12">Identifier</th>
+          <th id="VI" class="col-13">ID</th>
+          <th id="CT" class="col-12">Classification</th>
+          <th id="H" class="col-12">Hostility</th>
+          <th id="A" class="col-12">Armed</th>
+          <th id="B" class="col-12">Bearing(deg)</th>
+          <th id="H" class="col-12">Heading(deg)</th>
+          <th id="E" class="col-12">Elevation(m)</th>
+          <th id="S" class="col-12">Speed(Knots)</th>
+          <th id="C" class="col-12">Coordinates (long, lat)</th>
+          <th id="D" class="col-12">Distance (km)</th>
+          <th id="T" class="col-12">Time (S)</th>
+        </tr>
+      </thead>
+      <tbody id="sub_table">
+
+      </tbody>
+    </table>
+  </h1>
+  
+  <div id="modal1" class="modal">
+    <form class="modal-content animate" >
+      <div class="modal-content1">
+        <table style = "width:100%" id = "modal_table">
+          <tr>
+            <th></th>
+          </tr>
+          <tr>
+            <td> Cancel:</td>
+            <td><button id="untarget" class="modalBtn">UNTARGET</button></td>
+          </tr>
+          <tr>
+            <td>Authentication Code:</td>
+            <td><input type="text" placeholder="Enter Authentication " name="authCode" id="Ath"></td>
+          </tr>
+      </table>
+      </div>
+    </div>
+    </form>
+</body>
+
+</html>

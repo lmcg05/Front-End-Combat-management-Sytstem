@@ -1,0 +1,34 @@
+Sensor doesn't need to have coordinate information, they will know themselves where they are and how to send locations
+
+Sensor Gateway
+
+aircraft
+ - Fighter		Missile Aircraft
+ - Bomber		Large Base aircraft
+ - Attack		Gunner aircraft
+ - Maritime		Anchor
+ - Multirole		
+ - Transport		bus/car
+ - AEW&C		satelitte dish icon
+ - Reconnaissance 	Spy 
+
+Navalship
+ - Aircraft Carrier 	aircraft carrier icon
+ - Surface Combatant	boat icon
+ - Submarine		sub icon
+ - Mine			mine icon
+ - Support		support icon
+ - Helicopter carrier	helicopter carrier icon
+ - Fast attack craft	speedboat icon
+
+Ground vehicle
+ - Rocket Artillery	Rocket Artillery icon
+ - Artillery		Artillery icon
+ - Tank			Task icon
+ - Reconnaissance	Spy icon
+- Light Utility Vehicle	Minigun icon 	
+ - Engineering Vehcile	Spanner icon
+ - Anti-aircraft	Cancel Aircraft
+ - Military Ambulance	Plus 
+ - Electonic Warfare	electronic
+

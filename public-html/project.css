@@ -1,0 +1,134 @@
+body {
+    background-color: black;
+    padding: 5px;
+}
+h1 {
+    border: 1 px solid black;
+    margin: auto;
+    padding: 10px;
+    font-size: 1em;
+    width: 100% ;
+}
+#main_table{
+    background-color: yellowgreen;
+    table-layout: relative ;
+}
+tr{
+    border: 1 px solid black;
+    color: aliceblue;
+    font-size: 2em;
+    margin: auto;
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    width: 50%;
+}
+td{
+    background-color: cornsilk;
+    color: black;
+    font-size: 1em;
+    margin: auto;
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    width: 50%;
+}
+
+.openbtn {
+    font-size: 30px;
+    cursor: pointer;
+    background-color: yellowgreen;
+    color: white;
+    padding: 5px 5px;
+    border: none;
+  }
+  
+  .openbtn:hover {
+    background-color:#444;
+  }
+
+.button1 {
+    background-color: rgb(197, 6, 6);
+    border: none;
+    color: white;
+    padding: 10px 22px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.button {
+    background-color: gray;
+    border-radius: 12px;
+    color: white;
+    padding: 12px 28px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
+ /* Modal Content */
+ .modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 5px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modalBtn{
+  background-color: rgb(197, 6, 6);
+  border: none;
+  color: white;
+  padding: 10px 22px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.col-md-4{
+  border: black 1px solid;
+  padding: 10px;
+}
+
+.fas.fa-cloud-showers-heavy {
+  top: 5px;
+  right: 0px;
+  position: fixed;
+  background-color: black;
+  border-color: black;
+  padding-right: 15px;
+}
+.fas.fa-bullseye {
+  top: 5px;
+  right: 70px;
+  position: fixed;
+  background-color: black;
+  border-color: black;
+  padding-right: 15px;
+}
+
+
+
